@@ -2,6 +2,104 @@
   text-align: center;
 }
 
+/* navbar.css */
+
+.navbar {
+  background-color: #ffeb3b; /* Match the background color */
+  padding: 10px; /* Add some padding */
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Center the navigation items */
+  align-items: center; /* Center items vertically */
+}
+
+.navbar-nav .nav-link {
+  color: black;
+  text-decoration: none; /* Remove underline */
+  margin: 0 15px; /* Add spacing between links */
+  font-weight: bold; /* Make text bold */
+  font-size: 1rem; /* Set font size */
+}
+
+.navbar-nav .nav-link:hover {
+  color: black;
+  text-decoration: none; /* Remove underline on hover */
+}
+
+.navbar-nav .nav-link:active {
+  color: black;
+  text-decoration: none; /* Remove underline on active */
+}
+
+.navbar-nav .nav-link::after {
+  content: '|';
+  margin-left: 15px; /* Space after each item */
+}
+
+.navbar-nav .nav-link:last-child::after {
+  content: ''; /* Remove the last divider */
+}
+
+.navbar-nav .nav-link button {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+}
+
+.navbar-nav .nav-link button:hover {
+  color: black;
+  text-decoration: none;
+}
+
+
+/* App.css */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.tab {
+  padding: 10px 20px;
+  margin: 0 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tab.active {
+  background-color: #ffeb3b; /* Active tab background color */
+  font-weight: bold;
+}
+
+.tab:hover {
+  background-color: #ffeb3b;
+}
+
+.content {
+  text-align: center;
+}
+
+.upload, .download {
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -27,6 +125,22 @@
 .App-link {
   color: #61dafb;
 }
+
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
 
 @keyframes App-logo-spin {
   from {
