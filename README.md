@@ -1,6 +1,12 @@
-# Getting Started with Create React App
+WING VISION
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was created as a dissertation project, supervised under Dr. Michal Mackiewicz
+
+This application is a user-friendly web interface for object detection in videos and time-lapse photography using the PyTorch model (YOLO v7). It focuses on full-stack development with React.js and FastAPI, integrating HPC nodes for efficient image processing and comprehensive user profile management using PostgreSQL database management.
+
+To know more about the application please refer![](https://github.com/uv0037/wing-vision/blob/master/Wing_vision.pdf)
+
+![alt text](https://github.com/uv0037/wing-vision/blob/master/wing.jpeg)
 
 ## Available Scripts
 
